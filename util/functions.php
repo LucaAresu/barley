@@ -57,3 +57,14 @@ function creaCookie(array $arr){
 function deleteCookie() {
     setcookie('barley_user','', 0);
 }
+function getAuthUser()
+{
+    return User::find($_SESSION['userId']);
+}
+
+function dump($something)
+{
+    echo '<pre>';
+    var_dump($something);
+    echo '</pre>';
+}

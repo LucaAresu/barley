@@ -1,7 +1,7 @@
 <?php
 requiredLogin();
 
-$auth = User::find($_SESSION['userId']);
+$auth = getAuthUser();
 ?>
 <!doctype html>
 <html lang="it">

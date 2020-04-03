@@ -3,8 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="4ef266b7-f09f-46c4-9476-0057d1b5ab8a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/AjaxController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/AjaxController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/GameController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/GameController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Resource.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Resource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot.php" beforeDir="false" afterPath="$PROJECT_DIR$/boot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/util/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/login/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/login/template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/template/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/template/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/template/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/template/menu.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/template/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/template/template.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,13 +59,13 @@
     <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Programmi\laragon\www\browsergame\img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Programmi\laragon\www\browsergame\img" />
       <recent name="E:\Programmi\laragon\www\browsergame\views\template" />
       <recent name="E:\Programmi\laragon\www\browsergame" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Programmi\laragon\www\browsergame\img" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -74,7 +87,7 @@
       <workItem from="1585735589388" duration="8268000" />
       <workItem from="1585750705262" duration="152000" />
       <workItem from="1585817152324" duration="12796000" />
-      <workItem from="1585903990380" duration="753000" />
+      <workItem from="1585903990380" duration="16048000" />
     </task>
     <servers />
   </component>
@@ -90,14 +103,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="694" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585490248741" />
-    <state x="748" y="334" key="NewPhpClassDialog" timestamp="1585747838586">
+    <state x="748" y="334" key="NewPhpClassDialog" timestamp="1585911278784">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="748" y="334" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585747838586" />
-    <state x="795" y="443" key="NewPhpFileDialog" timestamp="1585836074125">
+    <state x="748" y="334" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585911278784" />
+    <state x="795" y="443" key="NewPhpFileDialog" timestamp="1585911005865">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="795" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585836074125" />
+    <state x="795" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585911005865" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1585407235880">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -110,13 +123,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1118" y="252" key="ftp.server.browser/0.0.1920.1040@0.0.1920.1040" timestamp="1585406968747" />
+    <state width="600" height="424" key="javadoc.popup" timestamp="1585920925639">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="600" height="424" key="javadoc.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585920925638" />
     <state x="830" y="413" key="publish.login" timestamp="1585472798885">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="830" y="413" key="publish.login/0.0.1920.1040@0.0.1920.1040" timestamp="1585472798885" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585818560168">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585919088953">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585818560168" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585919088953" />
   </component>
 </project>

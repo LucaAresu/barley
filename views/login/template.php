@@ -1,3 +1,7 @@
+<?php
+if(auth())
+    redirect();
+?>
 <!doctype html>
 <html lang="it">
 <head>

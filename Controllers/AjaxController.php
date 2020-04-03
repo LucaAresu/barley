@@ -18,8 +18,12 @@ class AjaxController
                 throw new Error('accesso negato');
 
             $resources = Resource::get($input->userId);
-
-            $this->content = json_encode($resources);
+            $ret = new stdClass();
+            $ret->soldi = $resources->soldi;
+            $ret->caffe = $resources->caffe;
+            $ret->carote = $resources->carote;
+            $ret->clienti = $resources->clienti;
+            $this->content = json_encode($ret);
         }
 
         public function display()

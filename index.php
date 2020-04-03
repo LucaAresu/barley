@@ -1,5 +1,8 @@
 <?php
 session_start();
+spl_autoload_register(function ($className) {
+    require_once 'Models/'.$className.'.php';
+});
 $homeURL = '/progetti/browsergame/';
 require_once 'boot.php';
 if(!$_SESSION['token']) {
@@ -12,7 +15,7 @@ try {
     $controller = $router->dispatch();
     $controller->display();
 }catch(Exception $e) {
-    echo $e->getMessage();
+    echo $e->getMessage().' nel file '.$e->getTraceAsString();
 }
 ?>
 

@@ -86,12 +86,11 @@ a {
 .header {
     width: 50%;
     margin: auto;
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    justify-content: space-between;
     text-align: center;
 }
-.header div{
-}
+
 main {
     margin: auto;
     margin-top: 2rem;

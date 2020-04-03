@@ -18,6 +18,8 @@ document.addEventListener('DOMContentLoaded', dcl => {
         }).then(resp => {
             if (resp) {
                 document.querySelector('#soldi').innerHTML = resp.soldi;
+                document.querySelector('#caffe').innerHTML = resp.caffe;
+                document.querySelector('#carote').innerHTML = resp.carote;
                 document.querySelector('#clienti').innerHTML = resp.clienti;
                 blocco = false;
             }

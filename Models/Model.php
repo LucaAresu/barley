@@ -79,4 +79,24 @@ class Model
         return $str;
     }
 
+    public static function all()
+    {
+        $obj = new static();
+        $stmt = $obj->conn->prepare("select * from $obj->tableName");
+        $stmt->execute();
+        return $stmt->fetchAll();
+
+    }
+
+    public static function getAll($column, $ownerId)
+    {
+        $obj = new static();
+        $stmt = $obj->conn->prepare("select * from $obj->tableName where $column=:val");
+        $stmt->execute(['val' => $ownerId]);
+        return $stmt->fetchAll();
+
+
+        return null;
+    }
+
 }

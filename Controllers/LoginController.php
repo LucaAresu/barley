@@ -1,6 +1,5 @@
 <?php
 
-require_once 'Models/User.php';
 
 class LoginController
 {
@@ -63,8 +62,7 @@ class LoginController
             'password' => password_hash($psw1, PASSWORD_DEFAULT),
             'session' => $sessionToken,
         ]);
-        $user->risorse = new Resource();
-        $user->risorse->create(['user_id' => $user->id, 'last_update' => time()]);
+
 
     }catch (Exception $e) {
         if($e->getCode() == 23000) //nome utente già presente
