@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="39abee2b-e009-4299-b4d5-3a373b7f2441" name="browsergame" url="http://zankanotachi.it/progetti/browsergame">
+        <fileTransfer host="ftp.zankanotachi.it" port="21" rootFolder="/www.zankanotachi.it/">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

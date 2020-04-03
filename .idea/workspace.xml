@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4ef266b7-f09f-46c4-9476-0057d1b5ab8a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/GameController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/GameController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/template/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/template/template.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ZlG57X2d9ncRWs0tk1KpsSdAMX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Programmi\laragon\www\browsergame\img" />
+      <recent name="E:\Programmi\laragon\www\browsergame\views\template" />
+      <recent name="E:\Programmi\laragon\www\browsergame" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Programmi\laragon\www\browsergame\img" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4ef266b7-f09f-46c4-9476-0057d1b5ab8a" name="Default Changelist" comment="" />
+      <created>1585406080875</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585406080875</updated>
+      <workItem from="1585406082191" duration="424000" />
+      <workItem from="1585406592222" duration="1143000" />
+      <workItem from="1585472635369" duration="1466000" />
+      <workItem from="1585483188651" duration="14850000" />
+      <workItem from="1585558130981" duration="24454000" />
+      <workItem from="1585658684517" duration="7896000" />
+      <workItem from="1585735589388" duration="8268000" />
+      <workItem from="1585750705262" duration="152000" />
+      <workItem from="1585817152324" duration="12796000" />
+      <workItem from="1585903990380" duration="753000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Options" timestamp="1585406629859">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Options/0.0.1920.1040@0.0.1920.1040" timestamp="1585406629859" />
+    <state x="694" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1585490248741">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="694" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585490248741" />
+    <state x="748" y="334" key="NewPhpClassDialog" timestamp="1585747838586">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="748" y="334" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585747838586" />
+    <state x="795" y="443" key="NewPhpFileDialog" timestamp="1585836074125">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="795" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585836074125" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1585407235880">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585407235880" />
+    <state x="655" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1585904139902">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="655" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585904139902" />
+    <state x="1118" y="252" key="ftp.server.browser" timestamp="1585406968747">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1118" y="252" key="ftp.server.browser/0.0.1920.1040@0.0.1920.1040" timestamp="1585406968747" />
+    <state x="830" y="413" key="publish.login" timestamp="1585472798885">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="830" y="413" key="publish.login/0.0.1920.1040@0.0.1920.1040" timestamp="1585472798885" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585818560168">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585818560168" />
+  </component>
+</project>
