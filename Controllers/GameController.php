@@ -24,15 +24,17 @@ class GameController
 
     public function upgradeFattoria() {
         $buildingId = $_POST['building_id'];
+        $niterazioni = $_POST['nupgrade'];
         $user = getAuthUser();
         foreach($user->farmBuildings as $fb)
             if((int)$buildingId ===  $fb->building_id)
                 $building = $fb;
-
-        if($user->risorse->soldi >= $building->costo) {
-            $user->risorse->soldi -= $building->costo;
-            $user->risorse->save();
-            UserFarmBuildings::upgrade($user->id, $buildingId);
+        for($i=0; $i<$niterazioni; $i++) {
+            if ($user->risorse->soldi >= $building->costo) {
+                $user->risorse->soldi -= $building->costo;
+                $user->risorse->save();
+                UserFarmBuildings::upgrade($user->id, $buildingId);
+            }
         }
         redirect('fattoria');
 
@@ -50,15 +52,19 @@ class GameController
     public function upgradeBar()
     {
         $buildingId = $_POST['building_id'];
+        $niterazioni = $_POST['nupgrade'];
+
         $user = getAuthUser();
         foreach($user->shopBuildings as $sb)
             if((int)$buildingId ===  $sb->building_id)
                 $building = $sb;
 
-        if($user->risorse->soldi >= $building->costo) {
-            $user->risorse->soldi -= $building->costo;
-            $user->risorse->save();
-            UserShopBuildings::upgrade($user->id, $buildingId);
+        for($i=0; $i<$niterazioni; $i++) {
+            if ($user->risorse->soldi >= $building->costo) {
+                $user->risorse->soldi -= $building->costo;
+                $user->risorse->save();
+                UserShopBuildings::upgrade($user->id, $buildingId);
+            }
         }
         redirect('bar');
 

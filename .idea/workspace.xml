@@ -3,18 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4ef266b7-f09f-46c4-9476-0057d1b5ab8a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/AjaxController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/AjaxController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/GameController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/GameController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Resource.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Resource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/UserFarmBuildings.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/UserFarmBuildings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/bar.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/bar.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/fattoria.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/fattoria.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/login/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/login/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/template/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/template/header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +76,9 @@
       <workItem from="1585817152324" duration="12796000" />
       <workItem from="1585903990380" duration="17249000" />
       <workItem from="1585923949414" duration="3776000" />
-      <workItem from="1585991653527" duration="18888000" />
+      <workItem from="1585991653527" duration="18889000" />
+      <workItem from="1586015461195" duration="19000" />
+      <workItem from="1586017472877" duration="621000" />
     </task>
     <servers />
   </component>
@@ -113,10 +106,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585923698017" />
-    <state x="655" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1585991758749">
+    <state x="655" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1586017472858">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="655" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585991758749" />
+    <state x="655" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586017472858" />
     <state x="1118" y="252" key="ftp.server.browser" timestamp="1585406968747">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -129,6 +122,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="830" y="413" key="publish.login/0.0.1920.1040@0.0.1920.1040" timestamp="1585472798885" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1586017813099">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586017813099" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585919088953">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
