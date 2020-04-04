@@ -11,8 +11,10 @@ class UserFarmBuildings extends Model
         $farmBuildings =  parent::getAll($column, $ownerId);
         $buildings = FarmBuilding::all();
         for($i = 0; $i<count($farmBuildings); $i++) {
+            $costoBase = $buildings[$i]->costo;
+            $livello = $farmBuildings[$i]->livello;
             $farmBuildings[$i]->nome = $buildings[$i]->nome;
-            $farmBuildings[$i]->costo = $buildings[$i]->costo * ($farmBuildings[$i]->livello+1);
+            $farmBuildings[$i]->costo = $costoBase*($livello+1)*($livello*$livello*ceil($livello/10)+1);
         }
         return $farmBuildings;
     }
@@ -42,4 +44,5 @@ class UserFarmBuildings extends Model
             'building' => $buildingId,
         ]);
     }
+
 }

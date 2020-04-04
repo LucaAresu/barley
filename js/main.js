@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', dcl => {
                 document.querySelector('#soldi').innerHTML = resp.soldi;
                 document.querySelector('#caffe').innerHTML = resp.caffe;
                 document.querySelector('#carote').innerHTML = resp.carote;
+                document.querySelector('#torte').innerHTML = resp.torte;
                 document.querySelector('#clienti').innerHTML = resp.clienti;
                 blocco = false;
             }

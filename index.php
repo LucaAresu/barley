@@ -15,7 +15,7 @@ try {
     $controller = $router->dispatch();
     $controller->display();
 }catch(Exception $e) {
-    echo $e->getMessage().' nel file '.$e->getTraceAsString();
+    echo $e->getMessage();
 }
 ?>
 

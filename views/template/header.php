@@ -1,7 +1,7 @@
 <div class="header">
     <div>
 
-        <?=$auth->name?><br>
+        <?=$auth->name?> ID: <?=$auth->id?><br>
 
     </div>
     <div>
@@ -10,7 +10,7 @@
         </div>
 
         <div id="soldi">
-            <?=$auth->risorse->soldi?>
+            <?=number_format($auth->risorse->soldi)?>
         </div>
     </div>
 
@@ -20,7 +20,7 @@
         </div>
 
         <div id="caffe">
-            <?=$auth->risorse->caffe?>
+            <?=number_format($auth->risorse->caffe)?>
         </div>
     </div>
 
@@ -28,9 +28,16 @@
         <div class="header-descrizione">
             <img src="img/carota.png" title="carote">
         </div>
-
         <div id="carote">
-            <?=$auth->risorse->carote?>
+            <?=number_format($auth->risorse->carote)?>
+        </div>
+    </div>
+    <div>
+        <div class="header-descrizione">
+            <img src="img/torta.png" title="torte">
+        </div>
+        <div id="torte">
+            <?=number_format($auth->risorse->torte)?>
         </div>
     </div>
 
@@ -39,7 +46,7 @@
             <img src="img/clienti.png" title="clienti">
         </div>
         <div id="clienti">
-            <?=$auth->risorse->clienti?>
+            <?=number_format($auth->risorse->clienti)?>
         </div>
     </div>
 

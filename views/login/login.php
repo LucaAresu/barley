@@ -16,7 +16,7 @@
         <div>
             <input type="hidden" name="remember" value="0">
             <input type="checkbox" name="remember" value="1">
-            <label for="remember">Ricordati</label>
+            <label for="remember">Ricordami</label>
         </div>
 
         <button type="submit">Invia</button>

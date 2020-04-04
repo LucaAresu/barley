@@ -3,6 +3,8 @@ return [
   'GET' => [
       '' => 'GameController@index',
       'fattoria' => 'GameController@fattoria',
+      'bar' => 'GameController@bar',
+      'pubblicita' => 'GameController@pubblicita',
 
 
       'login' => 'LoginController@loginPage',
@@ -12,6 +14,8 @@ return [
   ],
     'POST' => [
         'fattoria' => 'GameController@upgradeFattoria',
+        'bar' => 'GameController@upgradeBar',
+        'pubblicita' => 'GameController@pubblicitaComprata',
 
         'ajax/risorse' => 'AjaxController@risorse',
         'login' => 'LoginController@login',

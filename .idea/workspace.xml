@@ -6,19 +6,15 @@
       <change beforePath="$PROJECT_DIR$/Controllers/AjaxController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/AjaxController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/GameController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/GameController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Model.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Models/Resource.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Resource.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot.php" beforeDir="false" afterPath="$PROJECT_DIR$/boot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/UserFarmBuildings.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/UserFarmBuildings.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/css.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/util/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/login/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/login/template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/fattoria.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/fattoria.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/login/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/login/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/template/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/template/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/template/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/template/menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/template/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/template/template.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,16 +52,16 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="web.server" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Programmi\laragon\www\browsergame\img" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Programmi\laragon\www\browsergame\img" />
       <recent name="E:\Programmi\laragon\www\browsergame\views\template" />
       <recent name="E:\Programmi\laragon\www\browsergame" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Programmi\laragon\www\browsergame\img" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -87,7 +83,9 @@
       <workItem from="1585735589388" duration="8268000" />
       <workItem from="1585750705262" duration="152000" />
       <workItem from="1585817152324" duration="12796000" />
-      <workItem from="1585903990380" duration="16048000" />
+      <workItem from="1585903990380" duration="17249000" />
+      <workItem from="1585923949414" duration="3776000" />
+      <workItem from="1585991653527" duration="18888000" />
     </task>
     <servers />
   </component>
@@ -103,22 +101,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="694" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585490248741" />
-    <state x="748" y="334" key="NewPhpClassDialog" timestamp="1585911278784">
+    <state x="748" y="334" key="NewPhpClassDialog" timestamp="1585993041820">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="748" y="334" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585911278784" />
-    <state x="795" y="443" key="NewPhpFileDialog" timestamp="1585911005865">
+    <state x="748" y="334" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585993041820" />
+    <state x="795" y="443" key="NewPhpFileDialog" timestamp="1586000692609">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="795" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585911005865" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1585407235880">
+    <state x="795" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586000692609" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1585923698017">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585407235880" />
-    <state x="655" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1585904139902">
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585923698017" />
+    <state x="655" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1585991758749">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="655" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585904139902" />
+    <state x="655" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585991758749" />
     <state x="1118" y="252" key="ftp.server.browser" timestamp="1585406968747">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

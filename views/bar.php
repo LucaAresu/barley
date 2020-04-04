@@ -1,7 +1,7 @@
 <?php
 $auth = getAuthUser();
 
-foreach($auth->farmBuildings as $building):
+foreach($auth->shopBuildings as $building):
     ?>
     Nome: <?=$building->nome?>
     Livello: <?=$building->livello?>
@@ -15,4 +15,3 @@ foreach($auth->farmBuildings as $building):
 
 <?php
 endforeach;
-

@@ -14,17 +14,62 @@ class Resource extends Model
     private function updateRisorse($userId) {
         $newUpdate = time();
         $secondiPassati = $newUpdate - $this->last_update;
-        $userBuildings = UserFarmBuildings::getAll('user_id', $userId);
-        $ed = FarmBuilding::whereEqual('risorsa','caffe');
+        if($secondiPassati) {
 
-        $this->soldi = $this->soldi + $secondiPassati * $this->clienti;
-        $this->caffe = $this->caffe+ $secondiPassati * $ed->produzione_base * $userBuildings[0]->livello;
-        $ed = FarmBuilding::whereEqual('risorsa','carote');
-        $this->carote = $this->carote+ $secondiPassati * $ed->produzione_base * $userBuildings[1]->livello;
-        $this->last_update = $newUpdate;
+            $shopBuilding = ShopBuilding::all();
+            $userShop = UserShopBuildings::getAll('user_id', $userId);
 
-        $this->save();
+            $consumo[0] = $shopBuilding[0]->consumo * $userShop[0]->livello;
+            $consumo[1] = $shopBuilding[1]->consumo * $userShop[1]->livello;
+            $consumo[2] = $shopBuilding[2]->consumo * $userShop[2]->livello;
+
+            $prezzo[0] = $shopBuilding[0]->prezzo_risorsa * $userShop[0]->livello;
+            $prezzo[1] = $shopBuilding[1]->prezzo_risorsa * $userShop[1]->livello;
+            $prezzo[2] = $shopBuilding[2]->prezzo_risorsa * $userShop[2]->livello;
+
+            //prima produco le risorse
+
+            $userBuildings = UserFarmBuildings::getAll('user_id', $userId);
+
+            $ed = FarmBuilding::whereEqual('risorsa', 'caffe');
+            $this->caffe = $this->caffe + $secondiPassati * $ed->produzione_base * $userBuildings[0]->livello *ceil($userBuildings[0]->livello/3) *ceil($userBuildings[0]->livello/20);
+
+            $ed = FarmBuilding::whereEqual('risorsa', 'carote');
+            $this->carote = $this->carote + $secondiPassati * $ed->produzione_base  * $userBuildings[1]->livello *ceil($userBuildings[1]->livello/3)* ceil($userBuildings[1]->livello/20);
+
+            $ed = FarmBuilding::whereEqual('risorsa', 'torta');
+            $this->torte = $this->torte + $secondiPassati * $ed->produzione_base  * $userBuildings[2]->livello *ceil($userBuildings[2]->livello/3)*ceil($userBuildings[2]->livello/20);
+
+            $clienti = $this->clienti;
+
+            for ($i = 0; $i < $clienti; $i++) {
+                $risorsaSpesa = mt_rand(0, sizeof($consumo));
+                switch($risorsaSpesa) {
+                    case 0: $risorsa = 'caffe'; break;
+                    case 1: $risorsa = 'carote'; break;
+                    case 2: $risorsa = 'torte'; break;
+                }
+                if ($this->$risorsa - $consumo[$risorsaSpesa] <= 0) {
+                    if($this->$risorsa === 0 && $this->clienti>50) {
+                        if(mt_rand(0,4) === 0)
+                            $this->clienti--;
+                    }
+                    $this->soldi += $prezzo[$risorsaSpesa] * $this->$risorsa;
+                    $this->$risorsa = 0;
+                } else {
+                    $this->$risorsa -= $consumo[$risorsaSpesa];
+                    $this->soldi += $consumo[$risorsaSpesa] * $prezzo[$risorsaSpesa];
+                }
+            }
+
+            $this->last_update = $newUpdate;
+
+            $this->save();
+        }
     }
+
+
+
     private function upd(array $attr) {
 
         $conn = DB::create()->getConn();
@@ -48,6 +93,7 @@ class Resource extends Model
             'clienti' => $this->clienti,
             'caffe' => $this->caffe,
             'carote' => $this->carote,
+            'torte' => $this->torte,
         ]);
     }
 

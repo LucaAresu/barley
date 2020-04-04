@@ -62,11 +62,9 @@ class LoginController
             'password' => password_hash($psw1, PASSWORD_DEFAULT),
             'session' => $sessionToken,
         ]);
-
-
     }catch (Exception $e) {
         if($e->getCode() == 23000) //nome utente già presente
-            return $this->registerPage(['gen' => 'Questo utente è già presente']);
+            return $this->registerPage(['gen' => dump($e->getMessage())]);
         else
             die($e->getMessage());
     }

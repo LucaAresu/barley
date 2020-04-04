@@ -10,8 +10,10 @@ class User extends Model
 
         $this->risorse = new Resource();
         $this->risorse->create(['user_id' => $this->id, 'last_update' => time()]);
-        $this->farmbuildings = new UserFarmBuildings();
-        $this->farmbuildings->create(['user_id' => $this->id]);
+        $this->farmBuildings = new UserFarmBuildings();
+        $this->farmBuildings->create(['user_id' => $this->id]);
+        $this->shopBuildings = new UserShopBuildings();
+        $this->shopBuildings->create(['user_id' => $this->id]);
 
     }
 
@@ -20,6 +22,7 @@ class User extends Model
         $user =  parent::find($id);
         $user->risorse = Resource::get($user->id);
         $user->farmBuildings = UserFarmBuildings::getAll('user_id', $user->id);
+        $user->shopBuildings = UserShopBuildings::getAll('user_id', $user->id);
 
         return $user;
     }
@@ -30,6 +33,7 @@ class User extends Model
 
         $user->risorse = Resource::get($user->id);
         $user->farmBuildings = UserFarmBuildings::getAll('user_id', $user->id);
+        $user->shopBuildings = UserShopBuildings::getAll('user_id', $user->id);
 
         return $user;
     }

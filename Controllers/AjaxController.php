@@ -19,10 +19,11 @@ class AjaxController
 
             $resources = Resource::get($input->userId);
             $ret = new stdClass();
-            $ret->soldi = $resources->soldi;
-            $ret->caffe = $resources->caffe;
-            $ret->carote = $resources->carote;
-            $ret->clienti = $resources->clienti;
+            $ret->soldi = number_format($resources->soldi);
+            $ret->caffe = number_format($resources->caffe);
+            $ret->carote = number_format($resources->carote);
+            $ret->clienti = number_format($resources->clienti);
+            $ret->torte = number_format($resources->torte);
             $this->content = json_encode($ret);
         }
 
