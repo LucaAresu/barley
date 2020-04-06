@@ -4,7 +4,7 @@ return [
       '' => 'GameController@index',
       'fattoria' => 'GameController@fattoria',
       'bar' => 'GameController@bar',
-      'pubblicita' => 'GameController@pubblicita',
+      'eventi' => 'GameController@pubblicita',
 
 
       'login' => 'LoginController@loginPage',
@@ -13,9 +13,10 @@ return [
 
   ],
     'POST' => [
+        '' => 'GameController@cheat',
         'fattoria' => 'GameController@upgradeFattoria',
         'bar' => 'GameController@upgradeBar',
-        'pubblicita' => 'GameController@pubblicitaComprata',
+        'eventi' => 'GameController@pubblicitaComprata',
 
         'ajax/risorse' => 'AjaxController@risorse',
         'login' => 'LoginController@login',

@@ -40,9 +40,16 @@ class Resource extends Model
             $ed = FarmBuilding::whereEqual('risorsa', 'torta');
             $this->torte = $this->torte + $secondiPassati * $ed->produzione_base  * $userBuildings[2]->livello *ceil($userBuildings[2]->livello/3)*ceil($userBuildings[2]->livello/20);
 
-            $clienti = $this->clienti;
 
-            for ($i = 0; $i < $clienti; $i++) {
+            if($this->clienti > 100000) {
+                $peso = 10;
+                $iterazioni = floor($this->clienti/10);
+            }else {
+                $iterazioni = $this->clienti;
+                $peso = 1;
+            }
+
+            for ($i = 0; $i < $iterazioni; $i++) {
                 $risorsaSpesa = mt_rand(0, sizeof($consumo));
                 switch($risorsaSpesa) {
                     case 0: $risorsa = 'caffe'; break;
@@ -52,13 +59,13 @@ class Resource extends Model
                 if ($this->$risorsa - $consumo[$risorsaSpesa] <= 0) {
                     if($this->$risorsa === 0 && $this->clienti>50) {
                         if(mt_rand(0,4) === 0)
-                            $this->clienti--;
+                            $this->clienti-= $peso;
                     }
-                    $this->soldi += $prezzo[$risorsaSpesa] * $this->$risorsa;
+                    $this->soldi += $prezzo[$risorsaSpesa] * $this->$risorsa*$secondiPassati*$peso;
                     $this->$risorsa = 0;
                 } else {
-                    $this->$risorsa -= $consumo[$risorsaSpesa];
-                    $this->soldi += $consumo[$risorsaSpesa] * $prezzo[$risorsaSpesa];
+                    $this->$risorsa -= $consumo[$risorsaSpesa]*$peso;
+                    $this->soldi += $consumo[$risorsaSpesa] * $prezzo[$risorsaSpesa]*$secondiPassati*$peso;
                 }
             }
 

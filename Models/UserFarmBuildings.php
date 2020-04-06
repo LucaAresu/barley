@@ -15,6 +15,7 @@ class UserFarmBuildings extends Model
             $livello = $farmBuildings[$i]->livello;
             $farmBuildings[$i]->nome = $buildings[$i]->nome;
             $farmBuildings[$i]->costo = $costoBase*($livello+1)*($livello*$livello*ceil($livello/10)+1);
+            $farmBuildings[$i]->descrizione = $buildings[$i]->descrizione;
         }
         return $farmBuildings;
     }

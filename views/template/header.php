@@ -1,7 +1,8 @@
 <div class="header">
-    <div>
-
-        <?=$auth->name?> ID: <?=$auth->id?><br>
+    <div class="utente">
+        <img src="img/barley.png">
+        <?=$auth->name?><br>
+        <a href="logout">Logout</a>
 
     </div>
     <div>

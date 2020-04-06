@@ -14,6 +14,8 @@ class UserShopBuildings extends Model
             $livello = $shopBuilding[$i]->livello;
             $shopBuilding[$i]->nome = $buildings[$i]->nome;
             $shopBuilding[$i]->costo = $costoBase*($livello+1)*($livello*$livello*ceil($livello/10)+1);
+            $shopBuilding[$i]->descrizione = $buildings[$i]->descrizione;
+
         }
         return $shopBuilding;
     }

@@ -14,7 +14,7 @@ class GameController
 
     public function index()
     {
-        $this->content = "<br><br>a<br>a<br>a<br>a<br>a<br>";
+        $this->content = view('home');
     }
 
     public function fattoria()
@@ -92,12 +92,22 @@ class GameController
             else
                 $user->risorse->clienti += $tipi[$modo]['clienti'];
             $user->risorse->soldi -= $tipi[$modo]['costo'];
+            if($user->risorse->clienti > 1000000)
+                $user->risorse->clienti = 1000000;
             $user->risorse->save();
         }
 
-        redirect('pubblicita');
+        redirect('eventi');
 
 
+    }
+
+    public function cheat()
+    {
+        $auth = getAuthUser();
+        $auth->risorse->soldi = 100000;
+        $auth->risorse->save();
+        redirect();
     }
 
 

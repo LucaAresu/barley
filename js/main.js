@@ -1,5 +1,23 @@
 document.addEventListener('DOMContentLoaded', dcl => {
     let risorse = async () => {
+        let togliVirgole = num => {
+             return parseInt(num.replace(/,/g,''));
+        };
+        let checkBottoni = soldi => {
+            soldi= togliVirgole(soldi);
+            let divs = document.querySelectorAll('.card');
+            for(let ele of divs) {
+              let costo = ele.querySelector('.costo').innerHTML;
+              costo = togliVirgole(costo);
+              if(soldi > costo) {
+                  let bottoni = ele.querySelectorAll('button');
+                  for(let button of bottoni) {
+                      button.disabled = false;
+                  }
+              }
+
+          }
+        };
 
         let headers = new Headers();
         let init = {
@@ -17,11 +35,9 @@ document.addEventListener('DOMContentLoaded', dcl => {
                 return resp.json();
         }).then(resp => {
             if (resp) {
-                document.querySelector('#soldi').innerHTML = resp.soldi;
-                document.querySelector('#caffe').innerHTML = resp.caffe;
-                document.querySelector('#carote').innerHTML = resp.carote;
-                document.querySelector('#torte').innerHTML = resp.torte;
-                document.querySelector('#clienti').innerHTML = resp.clienti;
+                for(let key of Object.keys(resp))
+                    document.querySelector('#'+key).innerHTML = resp[key];
+                checkBottoni(resp.soldi);
                 blocco = false;
             }
 
