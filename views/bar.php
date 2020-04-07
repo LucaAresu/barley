@@ -11,8 +11,10 @@ foreach($auth->shopBuildings as $building):
     <div class="titolo">
         <?=$building->nome?> (<?=$building->livello?>)
     </div>
-    <img src="img/<?=strtolower($building->nome)?>.jpg">
-    <p><?=$building->descrizione?></p>
+    <div class="descrizione">
+        <img src="img/<?=strtolower($building->nome)?>.jpg">
+        <p><?=$building->descrizione?></p>
+    </div>
     <p>Costo upgrade: <span class="costo"><?=number_format($building->costo)?></span></p>
     <div class="formedifici">
         <form method="post">

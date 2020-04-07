@@ -157,6 +157,8 @@ main .content {
 }
 .card img {
     width: 100%;
+    margin: auto;
+    border-radius: 20%;
 }
 .card button:hover:enabled {
     background-color: var(--button-background-hover);
@@ -183,7 +185,15 @@ main .content {
 .home {
     padding: 0.5rem;
 }
-
+ .descrizione {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+ .descrizione p {
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+ }
 .home button {
     display: block;
     margin: auto;
@@ -251,6 +261,9 @@ main .content {
         margin-right: 5rem;
         width: 90%;
     }
+    .descrizione {
+        display: block;
+    }
     .content p {
         margin-left: 1rem;
     }
@@ -264,6 +277,10 @@ main .content {
     .formedifici form{
         display: grid;
         grid-template-columns: auto auto;
+    }
+    .card img {
+        border-radius: 0;
+        width: 100%;
     }
 
     
