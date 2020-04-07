@@ -129,6 +129,7 @@ main .content {
 }
 .card {
     border: 1px solid var(--border);
+    border-radius: var(--border-radius);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -146,7 +147,7 @@ main .content {
     border: none;
     outline: none;
     border-radius: var(--border-radius);
-    margin: 0;
+    margin: 0.3rem;
 }
 .card img {
     width: 100%;
@@ -165,9 +166,10 @@ main .content {
 
 .eventi button {
     display:block;
-    margin: auto;
+    margin: 0.3rem auto;
     width: 75%;
     padding: 1rem;
+
     background-color: var(--button-background);
     border: none;
     border-radius: var(--border-radius);
@@ -194,4 +196,8 @@ main .content {
     border-radius: 50%;
     border: 5px solid var(--border);
 
+}
+@media only screen and (min-width: 768px) {
+
+    
 }

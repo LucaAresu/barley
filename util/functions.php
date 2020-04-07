@@ -68,3 +68,12 @@ function dump($something)
     var_dump($something);
     echo '</pre>';
 }
+
+function errorMessage($str = '')
+{
+    $str = $str ?? 'Errore Generico';
+    require_once 'Controllers/GameController.php';
+    $con = new GameController();
+    $con->errorMessage($str);
+    $con->display();
+}

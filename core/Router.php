@@ -18,7 +18,7 @@ class Router
 
         if(array_key_exists($requestURL, $this->routes[$method]))
             return $this->handle($this->routes[$method][$requestURL]);
-        else throw new Exception('Route not found');
+        else throw new Exception('Route not found', 404);
     }
 
     public function handle($controllerMethod)

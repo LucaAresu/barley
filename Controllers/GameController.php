@@ -102,6 +102,11 @@ class GameController
 
     }
 
+    public function errorMessage(string $str)
+    {
+        $this->content = $str;
+    }
+
     public function cheat()
     {
         $auth = getAuthUser();

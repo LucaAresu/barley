@@ -13,7 +13,7 @@ foreach($auth->shopBuildings as $building):
     </div>
     <img src="img/<?=strtolower($building->nome)?>.jpg">
     <p><?=$building->descrizione?></p>
-    Costo upgrade: <span class="costo"><?=number_format($building->costo)?></span>
+    <p>Costo upgrade: <span class="costo"><?=number_format($building->costo)?></span></p>
     <div class="formedifici">
         <form method="post">
             <input type="hidden" name="building_id" value="<?=$building->building_id?>">

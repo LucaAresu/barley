@@ -11,7 +11,7 @@ $tipi[] = ['costo' => 10000000, 'clienti' => 'RADDOPPIO CLIENTI' , 'titolo' => '
     <?php
 for($i=0; $i< sizeof($tipi); $i++): ?>
     <div class="card">
-        <div class="header">
+        <div class="titolo">
             <?=$tipi[$i]['titolo']?>
         </div>
         <img src="img/<?=$tipi[$i]['img']?>">

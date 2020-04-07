@@ -2,21 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ef266b7-f09f-46c4-9476-0057d1b5ab8a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/GameController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/GameController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Models/Resource.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Resource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/UserFarmBuildings.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/UserFarmBuildings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/UserShopBuildings.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/UserShopBuildings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/Router.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/css.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/caffe.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/caffe.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/carota.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/carota.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/clienti.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/clienti.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/torta.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/torta.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/util/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/bar.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/bar.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/fattoria.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/fattoria.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/pubblicita.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pubblicita.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/template/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/template/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/template/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/template/menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/template/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/template/template.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,13 +58,13 @@
     <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Programmi\laragon\www\browsergame\img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Programmi\laragon\www\browsergame\img" />
       <recent name="E:\Programmi\laragon\www\browsergame\views\template" />
       <recent name="E:\Programmi\laragon\www\browsergame" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Programmi\laragon\www\browsergame\img" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -95,7 +96,10 @@
       <workItem from="1586026579783" duration="68000" />
       <workItem from="1586026896656" duration="1395000" />
       <workItem from="1586099405381" duration="334000" />
-      <workItem from="1586173406835" duration="15108000" />
+      <workItem from="1586173406835" duration="20424000" />
+      <workItem from="1586196837888" duration="64000" />
+      <workItem from="1586196976243" duration="188000" />
+      <workItem from="1586249044843" duration="2633000" />
     </task>
     <servers />
   </component>
@@ -123,10 +127,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1586099635481" />
-    <state x="655" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1586099479250">
+    <state x="655" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1586249080453">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="655" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586099479250" />
+    <state x="655" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586249080453" />
     <state x="1118" y="252" key="ftp.server.browser" timestamp="1585406968747">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

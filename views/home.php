@@ -11,7 +11,7 @@
         <li>Fattoria: all'aumentare del livello si producono più risorse</li>
         <li>Eventi: si comprano i clienti, più clienti ci sono più si guadagna<ul>
                 <li>Ogni cliente vuole una risorsa, se non è disponibile non prende niente</li>
-                <li>Se si hanno più di 50 clienti e non trova la risorsa c'è un 25% che il counter clienti cali di 1</li>
+                <li>Se si hanno più di 50 clienti e non trova la risorsa il counter clienti può calare</li>
                 <li>Se un cliente vuole 10 risorse e se ne hanno 9, le consuma tutte e paga per 9</li>
                 <li>Il limite di clienti è 1 milione</li>
             </ul>
