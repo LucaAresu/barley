@@ -26,7 +26,7 @@ html,body {
 
 .loginbox {
     margin: auto;
-    width:50%;
+    width:auto;
     text-align: center;
     border: 1px solid var(--border);
     padding: 1rem;
@@ -85,39 +85,45 @@ a {
 }
 
 .header {
-    width: 50%;
+    width: 100%;
     margin: auto;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto;
     text-align: center;
+}
+.utente {
+    margin: 5px;
 }
 
 main {
-    margin: auto;
     margin-top: 2rem;
-
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 70%;
+    width: 100%;
 }
 main .menu {
-    width: 10rem;
-    border-right: 1px solid white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--text-color);
 }
 .menu a{
+    width:100%;
+    color: var(--background-color);
+    border-left: 1px solid var(--background-color);
     padding: 1rem;
-    display: block;
+    display: inline-block;
+    text-decoration: none;
 }
 .menu a:hover{
     background-color: var(--border);
 }
 main .content {
-    margin-left: 5rem;
-    margin-right: 5rem;
-    width: 90%;
+    width: 99%;
     border: 1px solid var(--border);
     border-radius: var(--border-radius);
+    margin-bottom: 4rem;
 }
 .content p {
     margin-left: 1rem;
@@ -125,7 +131,7 @@ main .content {
 
 .edifici {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto;
 }
 .card {
     border: 1px solid var(--border);
@@ -161,7 +167,7 @@ main .content {
 
 .eventi {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto;
 }
 
 .eventi button {
@@ -197,7 +203,68 @@ main .content {
     border: 5px solid var(--border);
 
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
+
+
+    .loginbox {
+        width: 30%;
+    }
+
+
+    .header {
+        grid-template-columns: auto auto auto;
+    }
+    .utente {
+        margin: 0;
+    }
+
+    main {
+        margin: 2rem auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 70%;
+    }
+    main .menu {
+        background-color: transparent;
+        position: relative;
+        width: 10rem;
+        border-right: 1px solid white;
+        display: block;
+    }
+
+    .menu a{
+        width: auto;
+        color: var(--text-color);
+        text-decoration: underline;
+        display: block;
+    }
+    .menu a:hover{
+        background-color: var(--border);
+    }
+    main .content {
+        margin-left: 5rem;
+        margin-right: 5rem;
+        width: 90%;
+    }
+    .content p {
+        margin-left: 1rem;
+    }
+    .edifici {
+        grid-template-columns: auto auto auto;
+    }
+    .eventi {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
 
     
+}
+@media only screen and (min-width:1700px ) {
+    .header {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
 }

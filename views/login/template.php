@@ -17,9 +17,8 @@ if(auth())
 
 
 <h1 class="text-center title">Barley - The Game</h1>
-<div class="content">
     <?=$this->content?>
 
-</div>
+
 </body>
 </html>
