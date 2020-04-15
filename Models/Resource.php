@@ -50,7 +50,7 @@ class Resource extends Model
 
             //calcolo guadagno
             for ($i = 0; $i < $iterazioni; $i++) {
-                $risorsaSpesa = mt_rand(0, sizeof($consumo));
+                $risorsaSpesa = mt_rand(0, sizeof($consumo)-1);
                 $risorsa = $listaRisorse[$risorsaSpesa];
                 if ($this->$risorsa - $consumo[$risorsaSpesa]*$peso <= 0) {
                     //se non c'è risorsa e ci sono più di 50 clienti si possono perdere

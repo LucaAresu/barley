@@ -20,10 +20,10 @@ class AjaxController
             $resources = Resource::get($input->userId);
             $ret = new stdClass();
             $ret->soldi = is_numeric($resources->soldi) ? number_format($resources->soldi) : $resources->soldi;
-            $ret->caffe = is_numeric($resources->caffe) ? number_format($resources->soldi) : $resources->caffe;
-            $ret->carote = is_numeric($resources->carote) ? number_format($resources->soldi) : $resources->carote;
-            $ret->clienti = is_numeric($resources->clienti) ? number_format($resources->soldi) : $resources->clienti;
-            $ret->torte = is_numeric($resources->torte) ? number_format($resources->soldi) : $resources->torte;
+            $ret->caffe = is_numeric($resources->caffe) ? number_format($resources->caffe) : $resources->caffe;
+            $ret->carote = is_numeric($resources->carote) ? number_format($resources->carote) : $resources->carote;
+            $ret->clienti = is_numeric($resources->clienti) ? number_format($resources->clienti) : $resources->clienti;
+            $ret->torte = is_numeric($resources->torte) ? number_format($resources->torte) : $resources->torte;
             $this->content = json_encode($ret);
         }
 
