@@ -21,7 +21,7 @@
         </div>
 
         <div id="caffe">
-            <?=is_numeric($auth->risorse->caffe) ? number_format($auth->risorse->soldi) : $auth->risorse->caffe?>
+            <?=is_numeric($auth->risorse->caffe) ? number_format($auth->risorse->caffe) : $auth->risorse->caffe?>
         </div>
     </div>
 
@@ -30,7 +30,7 @@
             <img src="img/carota.png" title="carote">
         </div>
         <div id="carote">
-            <?=is_numeric($auth->risorse->carote) ? number_format($auth->risorse->soldi) : $auth->risorse->carote?>
+            <?=is_numeric($auth->risorse->carote) ? number_format($auth->risorse->carote) : $auth->risorse->carote?>
         </div>
     </div>
     <div>
@@ -38,7 +38,7 @@
             <img src="img/torta.png" title="torte">
         </div>
         <div id="torte">
-            <?=is_numeric($auth->risorse->torte) ? number_format($auth->risorse->soldi) : $auth->risorse->torte?>
+            <?=is_numeric($auth->risorse->torte) ? number_format($auth->risorse->torte) : $auth->risorse->torte?>
         </div>
     </div>
 
@@ -47,7 +47,7 @@
             <img src="img/clienti.png" title="clienti">
         </div>
         <div id="clienti">
-            <?=is_numeric($auth->risorse->clienti) ? number_format($auth->risorse->soldi) : $auth->risorse->clienti?>
+            <?=is_numeric($auth->risorse->clienti) ? number_format($auth->risorse->clienti) : $auth->risorse->clienti?>
         </div>
     </div>
 
