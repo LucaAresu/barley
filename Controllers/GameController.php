@@ -41,6 +41,9 @@ class GameController
     }
     public function display()
     {
+        global $vinto;
+        if($vinto)
+            $this->content = '<h1>Cap del bigint raggiunto! Complimenti hai vinto</h1>><img src="img/vinto.jpg">';
         require $this->template;
     }
 

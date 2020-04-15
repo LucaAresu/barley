@@ -37,8 +37,7 @@ class LoginController
 
     public function logout()
     {
-        $user = User::find($_SESSION['userId']);
-        $user->update(['cookie' => null]);
+
         deleteCookie();
         session_destroy();
         redirect();

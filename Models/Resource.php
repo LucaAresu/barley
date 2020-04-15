@@ -51,7 +51,7 @@ class Resource extends Model
             //calcolo guadagno
             for ($i = 0; $i < $iterazioni; $i++) {
                 $risorsaSpesa = mt_rand(0, sizeof($consumo));
-                $listaRisorse[$risorsaSpesa];
+                $risorsa = $listaRisorse[$risorsaSpesa];
                 if ($this->$risorsa - $consumo[$risorsaSpesa]*$peso <= 0) {
                     //se non c'è risorsa e ci sono più di 50 clienti si possono perdere
                     if($this->$risorsa === 0 && $this->clienti>50) {
@@ -92,8 +92,7 @@ class Resource extends Model
     }
 
     public function save() {
-        global $vinto;
-        if(!$vinto) {
+        try {
             $this->upd([
                 'soldi' => $this->soldi,
                 'last_update' => $this->last_update,
@@ -102,7 +101,20 @@ class Resource extends Model
                 'carote' => $this->carote,
                 'torte' => $this->torte,
             ]);
+        }catch(PDOException $e) {
+            global $vinto;
+            if($e->getCode() == 22003) {
+                $vinto = true;
+                $this->soldi = 'HAI VINTO';
+                $this->caffe = 'HAI VINTO';
+                $this->carote = 'HAI VINTO';
+                $this->torte = 'HAI VINTO';
+                $this->clienti = 'IL MONDO INTERO';
+
+
+            }
         }
+
     }
 
 
